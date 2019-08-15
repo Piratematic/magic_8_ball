@@ -14,6 +14,8 @@ class Asking
         SeeAnswers.new(@answers)
       else
         puts @answers.sample
+        sleep(2)
+        EightBall.new(@answers)
       end
      
   end
