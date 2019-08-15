@@ -5,14 +5,14 @@ require_relative "addanswer"
 require_relative "seeanswers"
 
 answers = [
-  "Yes",
-  "No",
-  "Maybe",
-  "I'd pass Mercury is in retregrade",
-  "Do it, what is the worst that could happen?",
-  "Why not?",
-  "I'd say pass",
-  "I don't know why you're asking me this",
+  "Yes".colorize(:green),
+  "No".colorize(:red),
+  "Maybe".colorize(:yellow),
+  "I'd pass Mercury is in retregrade".colorize(:magenta),
+  "Do it, what is the worst that could happen?".colorize(:blue),
+  "Why not?".colorize(:magenta),
+  "I'd say pass".colorize(:cyan),
+  "I don't know why you're asking me this".colorize(:light_black),
 ]
 
 # class Asking
