@@ -23,9 +23,16 @@ answers = [
   
 #   def start
 #     print "> "
-#     gets.strip
-#     # binding.pry
-#     puts @answers.sample
+#     choice = gets.strip
+#     case choice
+#       when "add_answer"
+#         AddAnswer.new(@answers)
+#       when "show_me"
+#         SeeAnswers.new(@answers)
+#       else
+#         @answers.sample
+#       end
+     
 #   end
 # end
 
@@ -52,7 +59,6 @@ answers = [
 
 #   def seeing
 #     puts @answers
-#     sleep (5)
 #     EightBall.new(@answers)
 #   end
 # end

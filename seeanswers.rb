@@ -7,7 +7,6 @@ class SeeAnswers
 
   def seeing
     puts @answers
-    sleep (5)
     EightBall.new(@answers)
   end
 end
