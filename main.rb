@@ -1,5 +1,8 @@
 require "colorize"
 require "pry"
+require_relative "asking"
+require_relative "addanswer"
+require_relative "seeanswers"
 
 answers = [
   "Yes",
@@ -12,47 +15,47 @@ answers = [
   "I don't know why you're asking me this",
 ]
 
-class Asking
-  def initialize(answers)
-    @answers = answers
-    start
-  end
+# class Asking
+#   def initialize(answers)
+#     @answers = answers
+#     start
+#   end
   
-  def start
-    print "> "
-    gets.strip
-    # binding.pry
-    puts @answers.sample
-  end
-end
+#   def start
+#     print "> "
+#     gets.strip
+#     # binding.pry
+#     puts @answers.sample
+#   end
+# end
 
-class AddAnswer
-  def initialize(answers)
-    @answers = answers
-    adding
-  end
+# class AddAnswer
+#   def initialize(answers)
+#     @answers = answers
+#     adding
+#   end
 
-  def adding
-    puts "Add new answer".colorize(:magenta)
-    print "> ".colorize(:magenta)
-    @answers << gets.strip
-    EightBall.new(@answers)
-  end
+#   def adding
+#     puts "Add new answer".colorize(:magenta)
+#     print "> ".colorize(:magenta)
+#     @answers << gets.strip
+#     EightBall.new(@answers)
+#   end
 
-end
+# end
 
-class SeeAnswers
-  def initialize(answers)
-    @answers = answers
-    seeing
-  end
+# class SeeAnswers
+#   def initialize(answers)
+#     @answers = answers
+#     seeing
+#   end
 
-  def seeing
-    puts @answers
-    sleep (5)
-    EightBall.new(@answers)
-  end
-end
+#   def seeing
+#     puts @answers
+#     sleep (5)
+#     EightBall.new(@answers)
+#   end
+# end
 
 class EightBall
   def initialize(answers)
