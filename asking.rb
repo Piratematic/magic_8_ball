@@ -13,7 +13,7 @@ class Asking
       when "show_me"
         SeeAnswers.new(@answers)
       else
-        @answers.sample
+        puts @answers.sample
       end
      
   end
