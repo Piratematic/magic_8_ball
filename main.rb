@@ -13,6 +13,24 @@ answers = [
   "Why not?".colorize(:magenta),
   "I'd say pass".colorize(:cyan),
   "I don't know why you're asking me this".colorize(:light_black),
+  "It is certain".colorize(:red),
+  "It is decidedly so".colorize(:light_blue),
+  "Without a doubt".colorize(:light_green),
+  "Yeah - for sure".colorize(:light_black),
+  "You can rely on it".colorize(:green),
+  "I see it as a yes".colorize(:light_yellow),
+  "Most likely".colorize(:light_green),
+  "Outlook Good".colorize(:lighht_magenta),
+  "Signs point to yes".colorize(:light_blue),
+  "The future is haze lets talk in the future".colorize(:light_black),
+  "Try again".colorize(:magenta),
+  "I dont think I should tell you the answer".colorize(:cyan),
+  "I dont think it is a great idea".colorize(:yellow),
+  "I'm not to certain".colorize(:blue),
+  "Hard pass".colorize(:red),
+  "I'm not saying no but probably not".colorize(:yellow),
+  "Think about it some more and ask again later".colorize(:cyan),
+  "Pick the one that you wanted when you hit the button and knew what you wanted the outcome to be".colorize(:magenta)
 ]
 
 # class Asking
